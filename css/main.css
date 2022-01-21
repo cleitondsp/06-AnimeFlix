@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 /* cabeçalho .... */
 
 header {
@@ -22,16 +23,17 @@ header {
 }
 
 .logo {
-    color: #black;
+    color: black;
     font-size: 50px;
     font-family: 'Lobster', cursive;
-    text-shadow: 1px 1px 1px rgb(66, 151, 39), 0 0 8px #6df559, 0 0 8px #24ff00, 0 0 8px #68ff51;
+    text-shadow: 4px 4px 3px #3ddd25;
     padding-left: 25px;    
 }
 
 .menu {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     min-height:100px;
     font-family: Montserrat;
@@ -50,7 +52,6 @@ header {
 .nav-link {
     display: flex;
     font-weight: 500;
-    flex-wrap: wrap;
     font-size: 15px;
     color: white;
     position: relative;
@@ -90,6 +91,8 @@ header {
 .nav-link:hover::after {
     left: 0;
 }
+
+/* destaques .... */
 
 
 
