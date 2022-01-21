@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* cabeçalho .... */
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 75px;     
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: roboto;
+}
+
+.logo {
+    color: #fff;
+    font-size: 3vw;
+    text-shadow: 1vw 1vw 1vw rgb(66, 151, 39), 0 0 3vw #6df559, 0 0 3vw #24ff00, 0 0 3vw #68ff51;
+    padding-left: 25px;    
+}
