@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
     margin: 0;
@@ -8,24 +9,103 @@
 
 /* cabeçalho .... */
 
-header .container {
+header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
-    height: 75px;     
-}
-
-header nav a {
-    text-decoration: none;
-    font-size: 15px;
-    font-family: roboto;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #ffe600, #5603bd);
+    padding-right: 25px;
+    padding-left: 25px;
+    border-bottom: 5px solid black;
 }
 
 .logo {
-    color: #fff;
-    font-size: 3vw;
-    text-shadow: 1vw 1vw 1vw rgb(66, 151, 39), 0 0 3vw #6df559, 0 0 3vw #24ff00, 0 0 3vw #68ff51;
+    color: #black;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px 1px rgb(66, 151, 39), 0 0 8px #6df559, 0 0 8px #24ff00, 0 0 8px #68ff51;
     padding-left: 25px;    
 }
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100px;
+    font-family: Montserrat;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    display: flex;
+    font-weight: 500;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: white;
+    position: relative;
+    padding: 5px 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 50%;
+    height: 2px;
+    background: white;
+    transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 50%;
+    height: 2px;
+    background: white;
+    transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-link:hover::before {
+    right: 0;
+}
+
+.nav-link:hover::after {
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
