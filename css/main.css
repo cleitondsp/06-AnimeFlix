@@ -19,7 +19,7 @@ header {
     background-image: linear-gradient(to right, #ffe600, #5603bd);
     padding-right: 25px;
     padding-left: 25px;
-    border-bottom: 5px solid black;
+    border-bottom: 10px solid black;
 }
 
 .logo {
@@ -84,75 +84,20 @@ header {
     transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.nav-link:hover::before {
+.nav-link:hover:before {
     right: 0;
 }
 
-.nav-link:hover::after {
+.nav-link:hover:after {
     left: 0;
 }
 
-
-/* destaques .... achei e adaptei essa parte da internet */
-
-
-[class^="number-slide"],
-[class*=" number-slide"] {
-  background: grey;
+main {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  color: #fff;
-  font-weight: 500;
-  height: 300px;
-  max-height: 100vh;
 }
 
-.tamanho {
-  width: 500px;
+.carrossel {
+  
 }
-
-.number-slide1 {
-  background: url('img/destaques/cavaleiros.jpg');
-  background-size: cover;
-}
-
-.number-slide2 {
-  background: url('img/destaques/dragonball.jpg'); 
-  background-size: cover;     
-}
-
-.number-slide3 {
-  background: url('img/destaques/cavaleiros.jpg'); 
-  background-size: cover;
-}
-
-.number-slide4 {
-  background: url('img/destaques/yugioh.jpg'); 
-  background-size: cover;
-}  
-
-.number-slide5 {
-  background: url('img/destaques/onepiece.jpg'); 
-  background-size: cover;
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

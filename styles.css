@@ -1,104 +1,3 @@
-/* body {
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* cabeçalho .... */
-
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-image: linear-gradient(to right, #ffe600, #5603bd);
-    padding-right: 25px;
-    padding-left: 25px;
-    border-bottom: 10px solid black;
-}
-
-.logo {
-    color: black;
-    font-size: 50px;
-    font-family: 'Lobster', cursive;
-    text-shadow: 4px 4px 3px #3ddd25;
-    padding-left: 25px;    
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    min-height:100px;
-    font-family: Montserrat;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.nav-link {
-    display: flex;
-    font-weight: 500;
-    font-size: 15px;
-    color: white;
-    position: relative;
-    padding: 5px 0;
-    overflow: hidden;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .3s;
-}
-
-.nav-link:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 100%;
-    width: 50%;
-    height: 2px;
-    background: white;
-    transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav-link:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    width: 50%;
-    height: 2px;
-    background: white;
-    transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.nav-link:hover:before {
-    right: 0;
-}
-
-.nav-link:hover:after {
-    left: 0;
-}
-
 
 /* Achei esse efeito na internet e gostei, alterei pouca coisa */
 
@@ -120,26 +19,26 @@ header {
 }
 
 .number-slide1 {
-  background: url('img/destaques/onepunch.jpg');
+  background: url('img/destaques/Animes/cavaleiros.jpg');
   background-size: cover;
 }
 
 .number-slide2 {
-  background: url('img/destaques/dragonball.jpg'); 
+  background: url('img/destaques/Animes/dragonball.jpg'); 
   background-size: cover;     
 }
 
 .number-slide3 {
-  background: url('img/destaques/cavaleiros.jpg'); 
+  background: url('img/destaques/Animes/onepiece.jpg'); 
   background-size: cover;
 }
 
 .number-slide4 {
-  background: url('img/destaques/yugioh.jpg'); 
+  background: url('img/destaques/Animes/onepunch.jpg'); 
   background-size: cover;
 }  
 
 .number-slide5 {
-  background: url('img/destaques/onepiece.jpg'); 
+  background: url('img/destaques/Animes/yugioh.jpg'); 
   background-size: cover;
 } 
