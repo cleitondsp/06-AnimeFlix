@@ -16,7 +16,7 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: linear-gradient(to right, #ffe600, #5603bd);
+    
     padding-right: 25px;
     padding-left: 25px;
     border-bottom: 10px solid black;
@@ -98,6 +98,26 @@ main {
   align-items: center;
 }
 
-.carrossel {
-  
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #ffe600, #5603bd);
+    width: 100%;
+}
+
+.carrossel-filmes {
+    height: 270px;
+    background: black;
+    border-top: 10px solid black;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.item {
+    height: 250px;
+    width: 200px;
 }
