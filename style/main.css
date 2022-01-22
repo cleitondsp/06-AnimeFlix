@@ -106,7 +106,7 @@ body {
 }
 
 .carrossel-filmes {
-    height: 270px;
+    height: 260px;
     background: black;
     border-top: 10px solid black;
 }
@@ -126,13 +126,48 @@ body {
 
 /* escolhas da navegação .... */
 
-.navegacao {
+
+.navegacao-anime {
     border-top: 10px solid black;
     height: 75px;
+    align-content: center;
 }
 
-.animes {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.anime {
+    padding-left: 20px;
+    padding-top: 17px;
+    letter-spacing: 1.15px;
     opacity: 0.3;
+    font-weight: 500;
 }
+
+.navegacao-cartoons {
+    border-top: 10px solid black;
+    height: 125px;
+    align-content: center;
+}
+
+.cartoons {
+    padding-left: 20px;
+    padding-top: 65px;
+    letter-spacing: 1.15px;
+    opacity: 0.3;
+    font-weight: 500;
+}
+
+.navegacao-filmes {
+    border-top: 10px solid black;
+    height: 125px;
+    align-content: center;
+}
+
+.filmes {
+    padding-left: 20px;
+    padding-top: 65px;
+    letter-spacing: 1.15px;
+    opacity: 0.3;
+    font-weight: 500;
+}
+
+
+
