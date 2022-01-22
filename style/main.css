@@ -111,6 +111,8 @@ body {
     border-top: 10px solid black;
 }
 
+/* carrossel .... */
+
 .box-filme {
     height: 100%;
     width: 100%;
@@ -120,4 +122,17 @@ body {
 .item {
     height: 250px;
     width: 200px;
+}
+
+/* escolhas da navegação .... */
+
+.navegacao {
+    border-top: 10px solid black;
+    height: 75px;
+}
+
+.animes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.3;
 }
