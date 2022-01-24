@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ..... CABEÇALHO ..... */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-between;
+    height: 70px;    
+    border-bottom: 5px solid black;
+}
+
+.logo {
+    color: black;
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    text-shadow: 4px 4px 3px #3ddd25;
+    padding-left: 15px;    
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height:100px;
+    font-family: Montserrat;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    position: relative;
+    padding: 5px 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 50%;
+    height: 2px;
+    background: white;
+    transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 50%;
+    height: 2px;
+    background: white;
+    transition: .9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-link:hover:before {
+    right: 0;
+}
+
+.nav-link:hover:after {
+    left: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #ffe600, #5603bd);
+    width: 100%;
+}
+
+#btn-mobile {
+    display: none; /* escondendo o botao em janela grande */ 
+    font-family: Montserrat; 
+    font-size: 15px;  
+}
+
+@media (max-width: 800px) {
+    #btn-mobile {
+        display: block;
+        font-weight: bold;
+        color: white;
+    }
+
+    #menu {
+        /* mudando o estilo do menu */
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        /* background-image: linear-gradient(to right, #ffe600, #5603bd); */
+        z-index: 1000; /* vai garantir que o menu fique por cima de tudo */
+        height: 0;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background: currentColor;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+        transition: .3s;
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        transition: .3s;
+        top: -7px;
+    }
+
+    .nav-link:after {
+        background: none;    
+    }
+
+    .nav-link:before {
+        background: none;    
+    }        
+    
+}
+
+/* ..... CARROSSEL AUTOMATICO .... */
