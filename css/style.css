@@ -114,10 +114,11 @@ body {
         /* mudando o estilo do menu */
         display: block;
         position: absolute;
-        width: 100%;
+        width: 50%;
         top: 103px;
+        font-weight: bold;
         right: 0;
-        background-image: linear-gradient(to right, #ffe600, #5603bd);
+        background: rgba(0, 0, 0, 0.685);
         z-index: 1000; /* vai garantir que o menu fique por cima de tudo */
         height: 0;
         transition: .6s;
@@ -126,7 +127,7 @@ body {
     }
 
     #nav.active #menu {
-        height: calc(100vh - 70px);
+        height: calc(50% - 70px);
         visibility: visible;
         overflow-y: auto;
     }
@@ -210,28 +211,28 @@ max-height: 100vh;
 }
 
 .number-slide1 {
-background: url('/img/destaques/Animes/cavaleiros.jpg');
+background: url('/img/carPrincipal/cavaleiros.jpg');
 background-size: cover;
 }
 
 .number-slide2 {
-background: url('/img/destaques/Animes/dragonball.jpg');
+background: url('/img/carPrincipal/dragonball.jpg');
 background-size: cover;
 }
 
 .number-slide3 {
-background: url('/img/destaques/Animes/onepiece.jpg');
+background: url('/img/carPrincipal/onepiece.jpg');
 background-size: cover;
 }
 
 .number-slide4 {
-background: url('/img/destaques/Animes/onepunch.jpg');
+background: url('/img/carPrincipal/onepunch.jpg');
 background-size: cover;
 
 }
 
 .number-slide5 {
-background: url('/img/destaques/Animes/yugioh.jpg');
+background: url('/img/carPrincipal/yugioh.jpg');
 background-size: cover;
 }
 
